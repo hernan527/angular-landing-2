@@ -1,0 +1,14 @@
+<div class="slider-big-txt">{{ numberOfUsers }}</div>
+<div class="slider-small-txt">users</div>
+
+<div class="range-container">
+  <app-slider
+  [minValue]="minValue"
+  [maxValue]="maxValue"
+  [step]="step"
+  [initialValue]="initialValue"
+  (valueInput)="showValue($event)"></app-slider>
+</div>
+
+<span class="slider-big-txt">{{ pricePerYear | currency:'$':'symbol':'1.0' }}</span>
+<span class="slider-small-txt"> / year</span>

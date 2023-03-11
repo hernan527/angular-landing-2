@@ -1,0 +1,24 @@
+<section>
+  <div class="row">
+    <div class="col twelve">
+      <h1 class="center-txt">READY TO TAKE THE NEXT STEP?</h1>
+    </div>
+  </div>
+
+  <div class="row current-plan-info">
+    <div>
+      <div class="col six">
+        <h4>CURRENT PLAN:</h4>
+        <h2 class="semi-bold">{{ currentPlan.type }}</h2>
+        <span class="count-down-txt">You have: <b>{{ currentPlan.daysLeft }} days left</b></span>
+      </div>
+      <div class="col six">
+        <p>
+          Your team currently contains
+          <span class="brand-color members-txt">{{ currentPlan.members }} members</span>
+          <br>Want to <a href="#">manage your team members?</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,55 @@
+@import 'assets/scss/variable.scss';
+@import 'assets/scss/utils.scss';
+
+:host {
+  position: relative;
+  cursor: pointer;
+
+  div {
+    background-color: #FFF;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #393939;
+    margin-bottom: 15px;
+
+    &:after {
+      content: "\f0dd";
+      font-size: 19px;
+      position: absolute;
+      top: 3px;
+      right: 12px;
+      @extend .icon;
+      transition: all .2s;
+    }
+
+    &.flip-icon {
+      border: 1px solid #000;
+      &:after {
+        top: 11px;
+        transition: all .2s;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    right: 0;
+    padding: 8px 7px 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+
+  li {
+    padding-bottom: 6px;
+
+    :hover {
+      color: black;
+    }
+  }
+}

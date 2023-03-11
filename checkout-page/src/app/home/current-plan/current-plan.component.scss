@@ -1,0 +1,39 @@
+.current-plan-info {
+
+  @media (min-width: 768px) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .col + .col {
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: right;
+    }
+  }
+
+  > div {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: flex-end;
+      text-align: inherit;
+    }
+  }
+
+  p {
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+.count-down-txt {
+  font-size: 18px;
+}

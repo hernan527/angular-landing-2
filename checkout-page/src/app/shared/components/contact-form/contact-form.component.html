@@ -1,0 +1,36 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <app-input
+    label="Name:"
+    [control]="contactForm.get('name')"
+    ></app-input>
+  </div>
+  <div class="form-group">
+    <app-input
+    label="Phone:"
+    [control]="contactForm.get('phone')"
+    mask="(00) 0000 0000"
+    ></app-input>
+  </div>
+  <div class="form-group">
+    <app-input
+    label="Email:"
+    [control]="contactForm.get('email')"
+    ></app-input>
+  </div>
+  <div class="form-group">
+    <label>Subject:</label>
+    <app-select
+    [options]="selectOptions"></app-select>
+  </div>
+  <div class="form-group">
+    <label>Messages:</label>
+    <textarea
+    formControlName="message"
+    ></textarea>
+  </div>
+  <button
+  class="btn btn-primary"
+  [disabled]="contactForm.invalid"
+  type="submit">Contact</button>
+</form>

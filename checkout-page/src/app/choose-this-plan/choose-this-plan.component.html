@@ -1,0 +1,33 @@
+<ng-container *ngIf="!showThankYou">
+  <section>
+    <div class="row">
+      <div class="col twelve">
+        <h1 class="center-txt">Great! You choose the {{planName}} plan</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col twelve contact-subtitle">
+        <hr>
+        <h3 class="center-txt">You're almoust there, complete the payment information to get access to your plan.</h3>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <app-card-form (formSubmitted)="submittedValue($event)"></app-card-form>
+    </div>
+  </section>
+</ng-container>
+<ng-container *ngIf="showThankYou">
+  <section>
+    <div class="row">
+      <div class="col one">&nbsp;</div>
+      <div class="col ten center-txt">
+        <h1>YOU DID IT! The {{planName}} plan is yours.</h1>
+        <hr>
+        <h3>We already send you an email with your account access.</h3>
+      </div>
+    </div>
+  </section>
+</ng-container>

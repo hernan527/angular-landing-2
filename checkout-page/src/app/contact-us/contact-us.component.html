@@ -1,0 +1,29 @@
+<section>
+  <div class="row">
+    <div class="col twelve">
+      <h1 class="center-txt">What to know more about the <b>Enterprise</b> plan?</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col twelve contact-subtitle">
+      <hr>
+      <h3 class="center-txt">Get Help Right Now by Writing to Us.</h3>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="row">
+    <div class="col six contact-info">
+      <h1 class="brand-color bold">Email us</h1>
+      <hr>
+      <h3>Contact us if you have any questions.</h3>
+      <hr>
+      <h2 class="brand-color bold">+ {{ company.phone }}</h2>
+      <h4>Mon–Fri: {{ daysOpen.week }}</h4>
+      <h4>Sat: from {{ daysOpen.weekend }}</h4>
+    </div>
+    <div class="col six">
+      <app-contact-form [selectOptions]="selectOptions"></app-contact-form>
+    </div>
+  </div>
+</section>

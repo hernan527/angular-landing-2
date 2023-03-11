@@ -1,0 +1,13 @@
+<article>
+  <ul>
+    <li>
+      <p>{{ cardNumber | mask: '0000 0000 0000 0000' }}</p>
+    </li>
+    <li>
+      <p>{{ name }}</p>
+    </li>
+    <li>
+      <p>{{ expiration | mask: '00/00' }}</p>
+    </li>
+  </ul>
+</article>

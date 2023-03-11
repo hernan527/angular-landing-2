@@ -1,0 +1,10 @@
+@import 'assets/scss/variable.scss';
+
+header {
+  padding: $gutter 0;
+
+  a {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,19 @@
+article {
+  display: flex;
+  align-items: center;
+  height: 194px;
+  background: rgb(50,57,76);
+  background: linear-gradient(90deg, #32394c 0%, #7f838c 100%);
+  border-radius: 29px;
+  max-width: 352px;
+  margin: 0 auto;
+  padding: 10px 50px;
+
+  p {
+    color: #cac7c7;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,27 @@
+@import 'assets/scss/variable.scss';
+
+.plan-info {
+  text-align: center;
+
+  hr {
+    width: 40px;
+    height: 2px;
+    margin: $gutter*2 auto $gutter auto;
+  }
+
+  ul {
+    margin-top: $gutter;
+
+    li {
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: $gutter;
+    }
+  }
+}
+
+.choose-plan {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: $gutter - 5px;
+}

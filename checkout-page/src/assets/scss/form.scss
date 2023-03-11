@@ -1,0 +1,40 @@
+label {
+  @extend .h4;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+input:not([type='range']):not([type='radio']), textarea {
+  background-color: #F4F4F4;
+  font-family: 'roboto';
+  color: $txt-color;
+  font-size: 16px;
+  background-color: #FFF;
+  height: 33px;
+  padding: 0 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #393939;
+  margin-bottom: 15px;
+
+  &:focus {
+    border: 1px solid #000;
+    outline: none;
+  }
+
+  &.input-error {
+    border: 1px solid $danger-color;
+  }
+}
+
+textarea {
+  height: 100px;
+  padding: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}

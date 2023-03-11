@@ -1,0 +1,18 @@
+.contact {
+  &-subtitle {
+    padding: 30px 0;
+
+    hr {
+      border-top: 1px solid #EDEDED;
+      margin: 0 100px 30px;
+    }
+  }
+
+  &-info {
+    padding-right: 60px;
+
+    h2 {
+      margin-bottom: 25px;
+    }
+  }
+}

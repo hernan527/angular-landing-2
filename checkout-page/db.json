@@ -1,0 +1,72 @@
+{
+  "current": {
+    "type" : "Free 30 Day Trial",
+    "daysLeft" : 13,
+    "members" : 12
+  },
+  "plans": [
+    {
+      "name": "Basic",
+      "users": 5,
+      "month": 29,
+      "year": 300,
+      "description": ["Growing startup", "Freelancer with a few rotating clients"],
+      "items": [
+          "5 Project Rooms",
+          "xGB Storage",
+          "Visual Thinking Tools",
+          "Collaboration Tools",
+          "Self-Service Support",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+      ]
+    },
+    {
+      "name": "Standard",
+      "description": ["Leading design team within a big company", "Distributed business in which visual collaboration is key to success"],
+      "items": [
+        "5 Project Rooms",
+        "xGB Storage",
+        "Visual Thinking Tools",
+        "Collaboration Tools",
+        "Priority Support",
+        "Larger Team Sizes",
+        "Custom Templates",
+        "Guest Accounts",
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    {
+      "name": "Gold",
+      "users": 30,
+      "description": ["Business that successfully integrated BoxLab and is ready to deploy at scale", "Design-led Fortune 1000 Company"],
+      "items": [
+        "Unlimited Rooms",
+        "Unlimited Storage",
+        "Visual Thinking Tools",
+        "Collaboration Tools",
+        "On-Call Customer Success Manager",
+        "Multiple Teams",
+        "Custom Templates",
+        "Guest Accounts",
+        "Enterprise-Grade Security",
+        "Admin Dashboard & Analytics",
+        "Single Sign-On SAML Integration"
+      ]
+    }
+  ],
+  "company": {
+    "phone": "1 800 4759 5020",
+    "email": "info@boxlab.co",
+    "daysOpen": {
+      "week": "8am to 8pm",
+      "weekend": "8am to 4pm"
+    }
+  }
+}

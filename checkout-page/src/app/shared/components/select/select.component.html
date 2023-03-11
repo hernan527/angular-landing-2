@@ -1,0 +1,7 @@
+<div #select
+(closeOnClick)="closeSelectOptions()"
+[ngClass]="rotateOnClick()">Select an option</div>
+
+<ul *ngIf="showOptions">
+  <li *ngFor="let option of options">{{ option }}</li>
+</ul>

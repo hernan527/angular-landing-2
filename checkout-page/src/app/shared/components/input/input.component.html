@@ -1,0 +1,13 @@
+<div class="form-group">
+  <label>{{ label }}</label>
+  <input
+    [formControl]="control"
+    [ngClass]="{'input-error': showErrors()}"
+    [mask]="mask">
+  <ng-container *ngIf="showErrors()">
+    <p class="danger-txt" *ngIf="control.errors.required">Value is required</p>
+    <p class="danger-txt" *ngIf="control.errors.minlength">Value must have {{ control.errors.minlength.requiredLength }} numbers</p>
+    <p class="danger-txt" *ngIf="control.errors.maxlength">Value must have {{ control.errors.maxlength.requiredLength }} numbers</p>
+    <p class="danger-txt" *ngIf="control.errors.email">email format must be xxxx@xxxx.xxx</p>
+  </ng-container>
+</div>

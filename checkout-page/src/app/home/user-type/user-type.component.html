@@ -1,0 +1,17 @@
+<section>
+  <div class="row">
+    <div class="col four" *ngFor="let plan of plans">
+      <div class="plan-info">
+        <div class="choose-plan">{{ title }}</div>
+        <div *ngFor="let description of plan.description">
+          <p>{{ description }}</p>
+        </div>
+        <hr>
+        <h4 class="brand-color bold">{{ plan.name }} Includes:</h4>
+        <ul>
+          <li *ngFor="let item of plan.items">{{ item }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
